@@ -1,0 +1,500 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fugaz+One&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:wght@600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* :root{
+
+} */
+body{
+font-family: 'Dosis', sans-serif;
+font-family: 'Fugaz One', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+
+.bg-var{
+    background: #4E4FEB;
+}
+.fotoperfi{
+    border-radius: 50%;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    position: fixed !important; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* Parte del inicio */
+#inicio{
+    background-image: url("../img/pexels-dương-nhân-1529881.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 900px;
+    max-height: 620px;
+    position: relative;
+}
+
+#presentacion{
+    position: absolute; 
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%; 
+    max-width: 90rem;
+    width: 90%;
+}
+.h1, h1 {
+    font-size: 3.75rem;
+    animation: teclear 3s steps(20), efecto .8s step-end infinite alternate;
+
+}
+
+@keyframes teclear{
+    from{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes efecto{
+    50% {
+        border-color: transparent;
+    }
+}
+.info{
+    margin: 3rem auto 0 auto;
+    max-width: 80rem;
+}
+
+.infoyo{
+    color: white;
+    font-size: 1.9rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+
+}
+.fotoperfil{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.contenidoinicio{
+    font-size: 6rem; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center; 
+    color: white;
+    font-weight: 700;
+}
+
+#botoninicio{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.btn--bg{
+    padding: 1.3rem 4rem;
+    font-size: 1rem;
+}
+.btn{
+    background: #068FFF;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: transform 0.3s; 
+}
+.btn:hover{
+    border-radius: 10px ;
+    background-color: #4E4FEB;
+    color: #ffffff;
+    transform: scale(0.9);
+}
+
+.redes{
+    position: absolute;
+    top: 50%;
+    background: #4E4FEB;
+    transform: translateY(-50%);
+    padding: 0.1rem;
+
+}
+.redessociales{
+    /* width: 4rem; */
+    transition: transform 0.3s;
+    padding: 10px;
+    animation: slide-up 0.5s ease; /* Agregamos una animación llamada "slide-up" */
+
+}
+.iconos{
+    width: 100%;
+    box-sizing: inherit;
+
+ 
+}
+.enlace{
+    display: block;
+    /* padding: 1rem; */
+}
+
+.enlace img{
+    width: 35px;
+    padding: 3px;
+}
+
+
+.redessociales .enlace:hover{
+    background-color: #9393f1;
+    border-radius: 10px;
+}
+
+/* parte de mi y habilidades */
+#sobremi{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 30% cover 50%;
+    animation-fill-mode: both;
+}
+@keyframes show{
+    from   {
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+#sobremi h2{
+    color: #000000;
+    font-size: 36px;
+    border-bottom: 3px solid #4E4FEB;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 54px;
+}
+
+#sobremi h3{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+#sobremi .info{
+    padding: 0px 80px 0px 0px;
+
+}
+
+#sobremi .btn{
+    font-size: 10px;
+    width: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.habilidades{
+    margin-bottom: 60px;
+}
+.habilidad{
+    margin-right: 2.5rem;
+    display: inline-block;
+    margin-top: 40px;
+    text-align: center;
+}
+.habilidad p{
+    margin-bottom: -10px;
+    padding: 10px;
+
+
+}
+.habilidad img{
+    width: 60px;
+    height: 60px;
+
+}
+
+/* parte de proyectos */
+#proyectos h2{
+    color: #000000;
+    font-size: 36px;
+    border-bottom: 3px solid #4E4FEB;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 54px;
+}
+
+#proyectos{
+    background: #EEEEEE;
+}
+
+/* #proyectos p{
+    border: 1px solid black;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.619);
+    border-radius: 10px;
+} */
+#proyectos .proyectosin{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+#proyectos .proyectosin::after{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    content: ""; 
+    background: #0000004d;
+    transition: .5s;
+    border-radius: 10px;
+}
+#proyectos img{
+    width: 300px;
+    border-radius: 10px;
+    height: 200px;
+}
+#proyectos .proyectosin a{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    position: absolute;
+    z-index: 9;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0px 100px;
+    max-width: 120px;
+    text-align: left; 
+    transition: .5s;
+    border-radius: 8px;
+}
+
+#proyectos .proyectosin:hover a{
+    background: #000000;
+    color: #4E4FEB;
+    bottom: 30%;
+}
+
+#proyectos p{
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+/* parte de experiencia */
+#experiencia{
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+#experiencia h2{
+    color: #000000;
+    font-size: 36px;
+    border-bottom: 3px solid #4E4FEB;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 54px;
+}
+
+.carta {
+    background-color: #333; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.icono {
+    font-size: 36px; 
+    color: #068FFF; 
+}
+
+.carta h3 {
+    font-size: 24px; 
+    color: #fff; 
+}
+
+.carta p {
+    font-size: 16px; 
+    color: #ccc; 
+}
+  
+
+/* footer */
+ footer{
+    background:#068FFF;
+    color: #ffffff;
+    padding: 26px;
+
+    
+} 
+.name p{
+    font-size: 24px;
+    letter-spacing: 2px;
+} 
+
+.social p{
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 2px;
+
+}
+
+.redes_so {
+    float: left; /* Esto alineará las imágenes a la izquierda */
+    margin-right: 20px; /* Puedes ajustar el margen derecho según tus preferencias */
+}
+.redes_so img {
+    width: 40px;
+    height: 38px;
+} 
+.bajo{
+margin-top: 15px;
+border-top: 2px solid #ffffff ;
+}
+
+.derecho{
+    text-align: center;
+}
+
+/* parte de contacto */
+
+#contacto .contact{
+    border: 1px solid white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 4px;
+    box-shadow: 5px 5px 10px rgba(2, 2, 2, 0.8); 
+
+}
+#contacto h2{
+    color: #000000;
+    font-size: 36px;
+    border-bottom: 3px solid #4E4FEB;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 54px;
+}
+
+#contacto button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #068FFF ;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%); /* Empieza desde la parte inferior de la pantalla */
+    }
+    to {
+        transform: translateY(0); /* Termina en su posición final */
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    body{
+        overflow-x: hidden;
+    }
+    .redes {
+        display: none;
+    }
+}
+
+
+/* ordenador */
+
+@media screen and (min-width: 769px)and (max-width: 3820px){
+    .proyectoscel{
+        display: none;
+    }
+}
+
+/* TABLET */
+/* @media screen and (min-width: 768px)and (max-width: 1024px){
+
+} */
+
+/* SMARTPHONE */
+@media screen and (min-width: 320px) and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    #sobremi h3{
+        text-align: center;
+    }
+
+    #sobremi .info{
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    #sobremi .btn{
+        display: block;
+        margin: 0 auto;
+    }
+    .habilidades {
+        display: grid;
+    }
+    .proyectospc{
+        display: none;
+    }
+
+    #proyectos p{
+        text-align: center;
+    }
+    #proyectos .proyectosin{
+        display: flex;
+        justify-content: center;
+    }
+    #proyectos .proyectosin::after{
+        left: none;
+    }
+    #proyectos .proyectosin a{
+        left: auto; /* Quita la propiedad left */
+        right: auto; /* Quita la propiedad right */
+    }
+
+    #proyectos .proyectosin::after {
+        left: auto; /* Quita la propiedad left */
+        right: auto; /* Quita la propiedad right */
+    
+}   
+
+
+}
